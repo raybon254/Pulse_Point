@@ -1,9 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "./footer.css"; // custom styles
+import "./footer.css"; 
 
 function Footer() {
   return (
-    <footer className="sticky-bottom">
+    <footer className="bottom">
       <div className="py-4 bg-light shadow-sm">
         <Container>
           <Row className="gy-4">

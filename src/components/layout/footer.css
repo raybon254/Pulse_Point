@@ -7,3 +7,6 @@
 .sticky-bottom {
   margin-top: auto; 
 }
+.bottom{
+  flex: 1;
+}
