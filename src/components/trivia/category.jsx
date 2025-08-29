@@ -29,7 +29,8 @@ function Categories() {
 
         {/* Center Content */}
         <Col xs={12} md={8} className="d-flex justify-content-center align-items-center p-4" style={{ background: "#ecf0f1" }} >
-          <Card className="shadow-lg border-0" style={{ width: "100%", maxWidth: "1020px", minHeight: "500px", borderRadius: "16px", background: "#ffffff"}} >
+          <Card className="shadow-lg border-0  p-3" style={{ width: "100%", maxWidth: "1020px", minHeight: "500px", borderRadius: "16px", background: "#ffffff"}} >
+            <Card.Title className="trivia-header text-center fw-bold p-3"> <span className="highlight3"> 🎯 <span className="fw-bolder fs-2 highlight">W</span>elcome to Trivia</span> <span className="highlight2">Challenge!</span></Card.Title>
             <Card.Body className="d-flex justify-content-center align-items-center">
               <Cardinterface />
             </Card.Body>
