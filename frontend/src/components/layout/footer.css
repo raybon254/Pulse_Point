@@ -1,0 +1,12 @@
+.footer-bottom {
+  background-color: #13383b; 
+}
+.upper{
+    background-color: #ccd4d4;
+}
+.sticky-bottom {
+  margin-top: auto; 
+}
+.bottom{
+  flex: 1;
+}
