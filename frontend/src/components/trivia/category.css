@@ -1,0 +1,33 @@
+.hover-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  background: #ffffff; 
+}
+
+.trivia-header {
+  background: linear-gradient(90deg, #344747, #4f6d6d, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: #ffffff;
+}
+
+.trivia-header .highlight {
+  color: #5f5f5d; 
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.highlight2{
+  color: #24221a; 
+}
+.highlight3{
+  color: #a5c7d4;
+}
+
+.trivia-header .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #f0f0f0;
+}
