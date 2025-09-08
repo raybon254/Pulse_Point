@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col, Image, Card, ListGroup, Button, ProgressBar } from "react-bootstrap"; 
-import { useQuiz } from "../../contexts/QUizContext"; 
+import { useQuiz } from "../../contexts/QuizContext"; 
 import Cardinterface from "./card";
 import creativity from "../../assets/creativity.jpg";
 import entertainment2 from "../../assets/entertainment2.jpeg";
