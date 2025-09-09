@@ -17,19 +17,19 @@ function NavBar() {
             <Nav.Link as={NavLink} to="/" className="nav-hover">
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/features" className="nav-hover">
+            {/* <Nav.Link as={NavLink} to="#features" className="nav-hover">
               Features
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/how-it-works" className="nav-hover">
+            <Nav.Link as={NavLink} to="#how-it-works" className="nav-hover">
               How It Works
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link as={NavLink} to="/about" className="nav-hover">
               About
             </Nav.Link>
             <Nav.Link as={NavLink} to="/contact" className="nav-hover">
               Contact
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/register" className="nav-hover">
+            <Nav.Link as={NavLink} to="#register" className="nav-hover">
               Register
             </Nav.Link>
           </Nav>

@@ -2,7 +2,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 function Features() {
   return (
-    <section style={{ backgroundColor: "#eef7ff", padding: "60px 0" }}>
+    <section style={{ backgroundColor: "#eef7ff", padding: "60px 0" }} id="how-it-works">
       <Container>
         <h2 className="text-center mb-5">Core Features</h2>
         <Row>

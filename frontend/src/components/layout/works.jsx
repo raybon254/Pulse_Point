@@ -3,7 +3,7 @@ import { FaLightbulb, FaComments, FaHeart } from "react-icons/fa";
 
 function Work() {
   return (
-    <section style={{ backgroundColor: "#f9f5ff", padding: "60px 0" }}>
+    <section style={{ backgroundColor: "#f9f5ff", padding: "60px 0" }} id="how-it-works">
       <Container>
         <h2 className="text-center mb-5">How It Works</h2>
         <Row>

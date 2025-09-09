@@ -1,4 +1,6 @@
 import { Container, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import Trivia from "../../pages/triviapage";
 
 function CallToAction() {
   return (
@@ -8,8 +10,8 @@ function CallToAction() {
         <p className="mb-4">
           Join a supportive community and explore AI-powered tools for your mind and heart.
         </p>
-        <Button variant="light" size="lg" className="fw-bold">
-          Get Started
+        <Button as={NavLink} to="/trivia" variant="light" size="lg" className="fw-bold">
+            Get Started
         </Button>
       </Container>
     </section>
