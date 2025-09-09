@@ -20,6 +20,14 @@ function Categories() {
   const [timeLeft, setTimeLeft] = useState(10);
   const [quizFinished, setQuizFinished] = useState(false);
 
+  // Alerts
+  const alert = (file) => {
+    const audio = new Audio(`/alerts/${file}`);
+    audio.play().catch((err) => {
+      console.error("Audio play failed:", err);
+    });
+  }
+
   // Questions
   useEffect(() => {
     if (selectedItem) {
@@ -57,7 +65,11 @@ function Categories() {
   const handleAnswer = async (qid, cid) => {
     const result = await validateAnswer(qid, cid);
     if (result.correct) {
+      alert("success.wav");
       setScore((prev) => prev + 100);
+    }
+    else{
+      alert("fail.wav")
     }
     handleNextQuestion();
   };
@@ -66,8 +78,9 @@ function Categories() {
   const handleNextQuestion = () => {
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex((prev) => prev + 1);
-      setTimeLeft(10);
+      setTimeLeft(20);
     } else {
+      alert("completed.wav")
       setQuizFinished(true);
     }
   };
