@@ -29,7 +29,7 @@ function Categories() {
         setCurrentIndex(0);
         setScore(0);
         setQuizFinished(false);
-        setTimeLeft(10);
+        setTimeLeft(20);
       })();
     }
   }, [selectedItem]);
