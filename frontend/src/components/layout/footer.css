@@ -1,12 +1,124 @@
+/* Footer Styles */
+:root {
+  --footer-primary: #5C9EAD;     /* Soft blue-teal */
+  --footer-secondary: #326789;   /* Deeper blue */
+  --footer-accent: #E39774;      /* Soft coral */
+  --footer-light: #EAF4F4;       /* Very light blue */
+  --footer-dark: #2C3E50;        /* Dark blue-gray */
+  --footer-text: #F8F9FA;        /* Light text */
+}
+
+.site-footer {
+  margin-top: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-main {
+  background: linear-gradient(135deg, var(--footer-light) 0%, #E0F0F0 100%);
+  color: var(--footer-dark);
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--footer-secondary);
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  line-height: 1.6;
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 90%;
+}
+
+.footer-title {
+  font-weight: 600;
+  color: var(--footer-secondary);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--footer-accent);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.7rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  transform: translateX(5px);
+  color: var(--footer-accent);
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
 .footer-bottom {
-  background-color: #13383b; 
+  background: linear-gradient(135deg, var(--footer-secondary) 0%, var(--footer-dark) 100%);
+  color: var(--footer-text);
 }
-.upper{
-    background-color: #ccd4d4;
+
+.footer-copyright {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+  font-size: 0.9rem;
 }
-.sticky-bottom {
-  margin-top: auto; 
+
+.footer-tagline {
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0;
+  font-size: 1rem;
+  opacity: 0.9;
 }
-.bottom{
-  flex: 1;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-main {
+    text-align: center;
+  }
+  
+  .footer-description {
+    max-width: 100%;
+  }
+  
+  .footer-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
 }
