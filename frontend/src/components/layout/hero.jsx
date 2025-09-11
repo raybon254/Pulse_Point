@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function Hero() {
   return (
@@ -76,7 +77,8 @@ function Hero() {
                 e.target.style.backgroundColor = "#A3B18A";
                 e.target.style.transform = "translateY(0)";
                 e.target.style.boxShadow = "0 4px 12px rgba(163, 177, 138, 0.3)";
-              }}>
+              }}
+               as={NavLink} to="/trivia">
                 Get Started
               </button>
               <button style={{
