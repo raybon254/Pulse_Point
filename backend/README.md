@@ -1,7 +1,7 @@
 # Flask Quiz API
 
 A Flask backend that serves random multiple-choice questions organized by categories and subcategories.
-Each subcategory has its own Python module that can generate **30 questions** (with 4 choices each).
+Each subcategory has its own Python module that has questions (with 4 choices each).
 The database is SQLite and seeded from the `data/` Python modules.
 
 ## Quickstart
